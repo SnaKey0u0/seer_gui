@@ -1,0 +1,51 @@
+# 固定校正值：螢幕解析度、遊戲介面與操作節奏變更時才需要調整。
+# 關卡關鍵字、輪數與戰鬥順序請在 GUI 內管理。
+
+[ocr]
+device = "gpu" # 沒有 GPU 時改為 "cpu"
+lang = "chinese_cht"
+interval = 1.0
+
+[flow]
+# OCR 找到一般目標後、實際點擊前，等待畫面按鈕就緒的秒數。
+ocr_click_delay = 1.0
+# POST/POST2 最多等多久；逾時不視為異常，直接開始 RECOVER 偵測。
+post_maybe_wait = 5.0
+# 當本輪使用 PRE 或 PRE2 時，完成後點此座標返回關卡選單。
+back_to_menu_pos = [130, 40]
+
+[battle]
+# 一般點擊後、繼續下一個動作前的等待秒數；連點技能不使用此值。
+click_delay = 0.5
+# swap 時往上拖移的像素距離。
+drag_up_distance = 250
+# swap 拖曳移動本身花費的秒數。
+drag_duration = 0.2
+# swap 的喚醒點擊、按下、移動、放開等每個關鍵動作間的停留秒數。
+drag_click_delay = 0.1
+# 戰鬥順序某步未單獨指定等待秒數時，該步完成後的預設等待秒數。
+sequence_interval = 3.0
+# 戰鬥開始後、執行戰鬥順序第一步前等待開場動畫的秒數。
+battle_start_delay = 3.0
+# 進入收尾連點技能時，每次點擊技能之間的秒數。
+click_interval_spam = 0.5
+# 收尾連點技能後，多久仍未看到「點擊任意位置繼續」才判定異常並停止的秒數。
+continue_timeout = 40.0
+
+[battle.skill_pos]
+"1" = [165, 940]
+"2" = [465, 940]
+"3" = [775, 940]
+"4" = [1085, 940]
+"5" = [1400, 940]
+
+[battle.switch]
+pos = [1665, 980]
+
+[battle.swap_pos]
+"1" = [175, 940]
+"2" = [445, 940]
+"3" = [700, 940]
+"4" = [965, 940]
+"5" = [1220, 940]
+"6" = [1480, 940]

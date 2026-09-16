@@ -1,0 +1,22 @@
+{
+  "name": "五神獸",
+  "settings": {
+    "start_keywords": [
+      "青龍",
+      "白虎",
+      "玄武",
+      "朱雀",
+      "麒麟"
+    ],
+    "pre_keyword": "進入挑戰",
+    "pre2_keyword": "取消",
+    "post_keyword": "",
+    "post2_keyword": "",
+    "recover_keyword": "精靈恢復",
+    "continue_keyword": "點擊任意位置繼續",
+    "max_rounds": 5,
+    "use_battle_control": false,
+    "sequence_name": "星巴克",
+    "loop_skill_n": 1
+  }
+}
